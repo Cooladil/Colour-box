@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Complex Coding</title>
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+
+	<script type="text/javascript">
+		function colorMe(){
+			var v = document.getElementById("val").value;
+			document.getElementById("val").value = ""
+			if(v > 9 || v < 1){
+				alert("Please enter a number between 1 to 9");
+			}
+			else{
+			for(var i = 1 ; i <= 9 ; i++){
+				if(v == i){
+					document.getElementById(v).style.backgroundColor = "red";
+				}
+				else{
+					document.getElementById(i).style.backgroundColor = "lightblue";
+				}
+			}
+		}
+		}
+	</script>
+	<link rel="stylesheet" type="text/css" href="Adil1.css" />
+</head>
+<body id = "um">
+
+
+
+<div>
+<div class="container">
+<div class="row">
+<div class="col-sm-1"></div>
+</div>
+
+<div class="row">
+
+<center>
+	<h1 id = "ha">Enter a number and change the color in the Box!</h1>
+	<br><br><br>
+
+<div class="col-sm-5">
+<br><br><br><br><br>
+
+<div class="col-sm-7"><input type = "number" id = "val" placeholder = "Enter a number" class="form-control" /></div><br /><br /><br />
+<div class="col-sm-2"></div>
+<div class="col-sm-2"><input type = "button" id = "btn" value = "Color Me" onclick = "colorMe()" class="form-control btn-warning" /></div>
+
+</div>
+
+<div class="col-sm-1">
+	<br><br>
+	<img src="duck1.jpg.png" width="150px">
+
+</div>	
+
+<table border = "1" id = "tbl" width=35% height = 300>
+	
+
+<div class="col-sm-6">
+	<tr>
+		<th id = "1"><center><h1>1</h1></center></th>
+		<th id = "2"><center><h1>2</h1></center></th>
+		<th id = "3"><center><h1>3</h1></center></th>
+	</tr>
+
+
+	<tr>
+		<th id = "4"><center><h1>4</h1></center></th>
+		<th id = "5"><center><h1>5</h1></center></th>
+		<th id = "6"><center><h1>6</h1></center></th>
+	</tr>
+
+	<tr>
+		<th id = "7"><center><h1>7</h1></center></th>
+		<th id = "8"><center><h1>8</h1></center></th>
+		<th id = "9"><center><h1>9</h1></center></th>
+	</tr>
+	
+</table>
+<br />
+</div>
+
+
+</center>
+
+
+
+</div>
+
+</div>
+
+</div>
+<br>
+
+</body>
+
+</html>
+<!-- 
+make the border instead of double make it one: border collapse
+height and width shld be same
+input box shld b be good
+button shld be rounded corners 
+use div
+button and input shld side by side
+entire thing shld b the centre of the window
+-->
